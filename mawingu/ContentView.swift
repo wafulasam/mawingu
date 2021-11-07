@@ -13,16 +13,7 @@ struct ContentView: View {
             BackgroundView(topColor: .blue, bottomColor: .white)
             VStack {
                 CityTextView(cityName: "Cupertino, CA")
-                VStack (spacing: 10){
-                    Image(systemName: "cloud.sun.fill")
-                        .renderingMode(.original)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 180, height: 180)
-                    Text("76")
-                        .font(.system(size: 70, weight: .medium))
-                        .foregroundColor(.white)
-                }
+                MainWeatherStatusView(imageName: "cloud.sun.fill", temeperature: 24)
                 Spacer()
                 HStack (spacing: 20) {
                     WeatherDayView(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 24)
@@ -68,7 +59,7 @@ struct BackgroundView: View {
 
 // city text view
 struct CityTextView: View {
-    
+
     var cityName: String
     
     var body: some View {
@@ -78,6 +69,25 @@ struct CityTextView: View {
             .padding()
     }
     
+}
+
+// main weather status view
+struct MainWeatherStatusView: View {
+    var imageName: String
+    var temeperature: Int
+    
+    var body: some View {
+        VStack (spacing: 10){
+            Image(systemName: imageName)
+                .renderingMode(.original)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 180, height: 180)
+            Text("\(temeperature)°")
+                .font(.system(size: 70, weight: .medium))
+                .foregroundColor(.white)
+        }
+    }
 }
 
 
