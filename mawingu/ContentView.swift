@@ -42,6 +42,14 @@ struct ContentView: View {
                     WeatherDayView(dayOfWeek: "SAT", imageName: "snow", temperature: 5)
                 }
                 Spacer()
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                    Text("Change Day Time")
+                        .frame(width:280, height: 50)
+                        .background(Color(.white))
+                        .font(.system(size: 20, weight: .bold, design: .default))
+                        .cornerRadius(10)
+                }
+                Spacer()
             }
         }
     }
