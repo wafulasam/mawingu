@@ -12,11 +12,7 @@ struct ContentView: View {
         ZStack {
             BackgroundView(topColor: .blue, bottomColor: .white)
             VStack {
-                Text("Cupertino, CA")
-                    .font(.system(size: 32, weight: .medium, design: .default))
-                    .foregroundColor(.white)
-                    .padding()
-                
+                CityTextView(cityName: "Cupertino, CA")
                 VStack (spacing: 10){
                     Image(systemName: "cloud.sun.fill")
                         .renderingMode(.original)
@@ -68,6 +64,20 @@ struct BackgroundView: View {
         )
             .edgesIgnoringSafeArea(.all)
     }
+}
+
+// city text view
+struct CityTextView: View {
+    
+    var cityName: String
+    
+    var body: some View {
+        Text("\(cityName)")
+            .font(.system(size: 32, weight: .medium, design: .default))
+            .foregroundColor(.white)
+            .padding()
+    }
+    
 }
 
 
