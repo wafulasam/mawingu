@@ -35,11 +35,11 @@ struct ContentView: View {
                 }
                 Spacer()
                 HStack (spacing: 20) {
-                    WeatherDayView(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 74)
-                    WeatherDayView(dayOfWeek: "WED", imageName: "sun.max.fill", temperature: 88)
-                    WeatherDayView(dayOfWeek: "THU", imageName: "wind.snow", temperature: 55)
-                    WeatherDayView(dayOfWeek: "FRI", imageName: "sunset.fill", temperature: 60)
-                    WeatherDayView(dayOfWeek: "SAT", imageName: "snow", temperature: 25)
+                    WeatherDayView(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 24)
+                    WeatherDayView(dayOfWeek: "WED", imageName: "sun.max.fill", temperature: 30)
+                    WeatherDayView(dayOfWeek: "THU", imageName: "wind.snow", temperature: 10)
+                    WeatherDayView(dayOfWeek: "FRI", imageName: "sunset.fill", temperature: 20)
+                    WeatherDayView(dayOfWeek: "SAT", imageName: "snow", temperature: 5)
                 }
                 Spacer()
             }
@@ -69,7 +69,7 @@ struct WeatherDayView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
-            Text("\(temperature)")
+            Text("\(temperature)°")
                 .font(.system(size: 28, weight: .medium))
                 .foregroundColor(.white)
         }
