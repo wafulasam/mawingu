@@ -1,9 +1,6 @@
-//
-//  ContentView.swift
 //  mawingu
-//
 //  Created by Sammie on 06/11/2021.
-//
+//  ContentView.swift
 
 import SwiftUI
 
@@ -28,7 +25,7 @@ struct ContentView: View {
                 }
                 Spacer()
                 Button(action: { isNight.toggle() }) {
-                    WeatherButton(label: "Change Day Time", textColor: .blue, backgroundColor: .white)
+                    WeatherButton(imageName: isNight ?  "moon.stars.fill" : "sun.max.fill", label: isNight ? "Change Night Time" : "Change Day Time", textColor:isNight ? .white : .blue, backgroundColor: isNight ? .gray : .white)
                 }
                 Spacer()
             }
