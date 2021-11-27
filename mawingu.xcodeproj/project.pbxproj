@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC2EF6E32737E76300C4BCEC /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EF6E22737E76300C4BCEC /* WeatherButton.swift */; };
+		AC4FB29927524829009D52E9 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4FB29827524829009D52E9 /* StatusBarController.swift */; };
 		AC8858622737069700C4C0B7 /* mawinguApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8858612737069700C4C0B7 /* mawinguApp.swift */; };
 		AC8858642737069700C4C0B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8858632737069700C4C0B7 /* ContentView.swift */; };
 		AC8858662737069900C4C0B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8858652737069900C4C0B7 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		AC2EF6E22737E76300C4BCEC /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
+		AC4FB29827524829009D52E9 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		AC88585E2737069700C4C0B7 /* mawingu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mawingu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8858612737069700C4C0B7 /* mawinguApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mawinguApp.swift; sourceTree = "<group>"; };
 		AC8858632737069700C4C0B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,11 +98,12 @@
 		AC8858602737069700C4C0B7 /* mawingu */ = {
 			isa = PBXGroup;
 			children = (
-				AC8858632737069700C4C0B7 /* ContentView.swift */,
-				AC8858612737069700C4C0B7 /* mawinguApp.swift */,
 				AC2EF6E22737E76300C4BCEC /* WeatherButton.swift */,
+				AC8858612737069700C4C0B7 /* mawinguApp.swift */,
+				AC8858632737069700C4C0B7 /* ContentView.swift */,
 				AC8858652737069900C4C0B7 /* Assets.xcassets */,
 				AC8858672737069900C4C0B7 /* Preview Content */,
+				AC4FB29827524829009D52E9 /* StatusBarController.swift */,
 			);
 			path = mawingu;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC8858642737069700C4C0B7 /* ContentView.swift in Sources */,
+				AC4FB29927524829009D52E9 /* StatusBarController.swift in Sources */,
 				AC8858622737069700C4C0B7 /* mawinguApp.swift in Sources */,
 				AC2EF6E32737E76300C4BCEC /* WeatherButton.swift in Sources */,
 			);

@@ -51,6 +51,7 @@ struct BackgroundView: View {
             endPoint: .bottomTrailing
         )
             .edgesIgnoringSafeArea(.all)
+            .statusBarStyle(.lightContent) //set status bar style here
     }
 }
 
@@ -111,3 +112,4 @@ struct WeatherDayView: View {
         }
     }
 }
+
